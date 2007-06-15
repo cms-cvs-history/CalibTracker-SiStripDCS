@@ -30,9 +30,16 @@ void SiStripModuleHVReader::analyze( const edm::Event& e, const edm::EventSetup&
   iSetup.get<SiStripModuleHVRcd>().get(SiStripModuleHV_);
   edm::LogInfo("SiStripModuleHVReader") << "[SiStripModuleHVReader::analyze] End Reading SiStripModuleHV" << std::endl;
   
-  std::vector <uint32_t> detid;
-  SiStripModuleHV_->GetAllDetIds(detid);
+
+  // put here a vector of DetIds to compare 
+  // Here we just take the vector with all modules that have HV OFF
   
+  // replace this code, with Your own detids
+  std::vector <uint32_t> detid;
+  SiStripModuleHV_->getDetIds(detid);
+  //
+
+
   if (printdebug_){
     for (uint32_t  id=0;id<=detid.size();id++)
       {

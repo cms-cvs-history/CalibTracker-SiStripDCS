@@ -69,19 +69,14 @@ void SiStripModuleHVBuilder::analyze(const edm::Event& evt, const edm::EventSetu
 
    std::vector<uint32_t> TheDetIdHVVector;
 
-   // fill vector with all detids
-   SiStripModuleHV_->putalldetids(detids);
-
-
-  for(std::vector<uint32_t>::const_iterator it = detids.begin(); it != detids.end(); it++){
+    for(std::vector<uint32_t>::const_iterator it = detids.begin(); it != detids.end(); it++){
        
     //Generate HV for each channel, if HV is off fill Vector
     int hv=rand() % 20;
     if(hv<=2){TheDetIdHVVector.push_back(*it);
 	  edm::LogInfo("SiStripModuleHVBuilder") << "detid with HV off" <<  *it
 						 << std::endl;
-	  edm::LogInfo("SiStripModuleHVBuilder") << "da bin ich!!"<< std::endl;
-      }
+    }
   }
 
   
