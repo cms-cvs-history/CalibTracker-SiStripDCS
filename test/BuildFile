@@ -18,9 +18,9 @@
 <use name=DataFormats/SiStripDetId>
 
 
-#<library file="*.cc" name=testCalibTrackerSiDCS>
-<flags SEAL_PLUGIN_NAME="CalibTrackerSiStripDCS">
-#</library>
+<library file="*.cc" name=testCalibTrackerSiStripDCS>
+<flags SEAL_PLUGIN_NAME="testCalibTrackerSiStripDCS">
+</library>
 	
 
 
