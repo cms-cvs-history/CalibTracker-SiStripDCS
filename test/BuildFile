@@ -19,7 +19,7 @@
 
 
 <library file="*.cc" name=testCalibTrackerSiStripDCS>
-<flags SEAL_PLUGIN_NAME="testCalibTrackerSiStripDCS">
+<flags EDM_PLUGIN=1>
 </library>
 	
 
