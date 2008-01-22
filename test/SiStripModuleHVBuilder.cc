@@ -11,15 +11,10 @@
 #include "Geometry/TrackerGeometryBuilder/interface/TrackerGeometry.h" 
 #include "Geometry/Records/interface/TrackerDigiGeometryRecord.h"
 #include "Geometry/CommonDetUnit/interface/GeomDetUnit.h"
-#include "Geometry/CommonDetUnit/interface/GeomDetType.h"
 #include "Geometry/CommonTopologies/interface/StripTopology.h"
 #include "Geometry/TrackerGeometryBuilder/interface/StripGeomDetUnit.h"
-#include "Geometry/TrackerGeometryBuilder/interface/StripGeomDetType.h"
-#include "DataFormats/FEDRawData/interface/FEDNumbering.h"
 
 
-#include "CLHEP/Random/RandFlat.h"
-#include "CLHEP/Random/RandGauss.h"
 
 
 

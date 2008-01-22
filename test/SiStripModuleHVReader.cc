@@ -3,10 +3,8 @@
 
 #include "CalibTracker/SiStripDCS/test/SiStripModuleHVReader.h"
 
-#include "CondCore/DBOutputService/interface/PoolDBOutputService.h"
 
 
-#include "CondFormats/SiStripObjects/interface/SiStripModuleHV.h"
 
 
 #include <iostream>
