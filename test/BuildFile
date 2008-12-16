@@ -1,49 +1,22 @@
-<use name=boost>
-<use name=root>
-
-<use name=FWCore/Framework>
-<use name=FWCore/MessageLogger>
-<use name=FWCore/ParameterSet>
-
-<use name=Geometry/Records>
-<use name=Geometry/TrackerGeometryBuilder>
-
-<use name=CondCore/DBOutputService>
-
-<use name=CondFormats/SiStripObjects>
-
-<use name=CalibFormats/SiStripObjects>
-<use name=CalibTracker/SiStripConnectivity>
-
-<use name=DataFormats/SiStripDetId>
-
-
-<library file="*.cc" name=testCalibTrackerSiStripDCS>
-<flags EDM_PLUGIN=1>
+<library file="plugins/*.cc" name=testCalibTrackerSiStripDCSPlugins>
+  <use name=FWCore/Framework>
+  <use name=FWCore/MessageLogger>
+  <use name=FWCore/ParameterSet>
+  <use name=FWCore/ServiceRegistry>
+  <use name=Geometry/Records>
+  <use name=Geometry/TrackerGeometryBuilder>
+  <use name=CondCore/DBOutputService>
+  <use name=CondFormats/SiStripObjects>
+  <use name=CalibFormats/SiStripObjects>
+  <use name=CalibTracker/SiStripConnectivity>
+  <use name=CalibTracker/SiStripDCS>
+  <use name=DataFormats/SiStripDetId>
+  <use name=OnlineDB/SiStripConfigDb>
+  <use name=tkonlineswdb>
+  <use name=boost>
+  <use name=root>
+  <flags EDM_PLUGIN=1>
 </library>
-	
 
 
-<export>
-<lib name=testCondToolsSiStrip>
 
-<use name=boost>
-<use name=root>
-
-<use name=FWCore/Framework>
-<use name=FWCore/MessageLogger>
-<use name=FWCore/ParameterSet>
-
-<use name=Geometry/Records>
-<use name=Geometry/TrackerGeometryBuilder>
-
-<use name=CondCore/DBOutputService>
-
-<use name=CondFormats/SiStripObjects>
-
-<use name=CalibFormats/SiStripObjects>
-<use name=CalibTracker/SiStripConnectivity>
-
-<use name=DataFormats/SiStripDetId>
-
-</export>
