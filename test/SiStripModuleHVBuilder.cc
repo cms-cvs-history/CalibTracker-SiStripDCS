@@ -86,11 +86,7 @@ void SiStripModuleHVBuilder::analyze(const edm::Event& evt, const edm::EventSetu
   
   if( mydbservice.isAvailable() ){
     try{
-      if( mydbservice->isNewTagRequest("SiStripModuleHVRcd") ){
-	mydbservice->createNewIOV<SiStripModuleHV>(SiStripModuleHV_,mydbservice->endOfTime(),"SiStripModuleHVRcd");      
-      } else {
-	mydbservice->appendSinceTime<SiStripModuleHV>(SiStripModuleHV_,mydbservice->currentTime(),"SiStripModuleHVRcd");      
-      }
+	mydbservice->writeOne<SiStripModuleHV>(SiStripModuleHV_,mydbservice->currentTime(),"SiStripModuleHVRcd");      
     }catch(const cond::Exception& er){
       edm::LogError("SiStripModuleHVBuilder")<<er.what()<<std::endl;
     }catch(const std::exception& er){
