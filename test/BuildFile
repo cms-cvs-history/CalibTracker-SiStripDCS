@@ -20,4 +20,7 @@
   <flags EDM_PLUGIN=1>
 </library>
 
-
+<bin name="TestSiStripDCS" file="UnitTests/TestSiStripDCS.cc, UnitTests/TestSiStripDetVOffBuilder.cc,UnitTests/MasterTestSiStripDCS.cpp">
+  <use name=CalibTracker/SiStripDCS>
+  <use name=cppunit>
+</bin>
