@@ -1,4 +1,4 @@
-<library file="plugins/*.cc" name=testCalibTrackerSiStripDCSPlugins>
+<library file="Synchronization/*.cc" name=SyncCalibTrackerSiStripDCSPlugins>
   <use name=FWCore/Framework>
   <use name=FWCore/MessageLogger>
   <use name=FWCore/ParameterSet>
@@ -21,6 +21,6 @@
 </library>
 
 <bin name="TestSiStripDCS" file="UnitTests/TestSiStripDCS.cc, UnitTests/TestSiStripDetVOffBuilder.cc,UnitTests/MasterTestSiStripDCS.cpp">
-  <use name=CalibTracker/SiStripDCS>
-  <use name=cppunit>
+   <use name=CalibTracker/SiStripDCS>
+   <use name=cppunit>
 </bin>
