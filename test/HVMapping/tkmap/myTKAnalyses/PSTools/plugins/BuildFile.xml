@@ -1,0 +1,9 @@
+<use   name="FWCore/Framework"/>
+<use   name="FWCore/PluginManager"/>
+<use   name="FWCore/ParameterSet"/>
+<use   name="FWCore/MessageLogger"/>
+<use   name="DQM/SiStripCommon"/>
+<use   name="CommonTools/TrackerMap"/>
+<library   file="*.cc" name="myTKAnalysesPSToolsPlugins">
+  <flags   EDM_PLUGIN="1"/>
+</library>
